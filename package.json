@@ -3,7 +3,7 @@
   "version": "2.1.0",
   "main": "dist-electron/main/index.js",
   "description": "Electron Vite React boilerplate.",
-  "author": "草鞋没号 <308487730@qq.com>",
+  "author": "Valeria Pereira <aproblemasolution@gmail.com> & John Perez <mrjohnjairo10@gmail.com",
   "license": "MIT",
   "private": true,
   "debug": {
@@ -21,7 +21,8 @@
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
-    "@mui/material": "^5.11.13",
+    "@mui/icons-material": "^5.11.11",
+    "@mui/material": "^5.11.15",
     "electron-updater": "^5.3.0",
     "firebase": "^9.18.0",
     "react-router-dom": "^6.9.0",
