@@ -4,7 +4,7 @@ import { Login } from "./components/Login";
 import { Register } from "./components/Register";
 
 const App = () => (
-  <div className="bg-slate-300 h-screen text-white flex">
+  <div className="bg-disks bg-cover bg-center h-screen text-white">
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/login" element={<Login />} />

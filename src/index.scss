@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,100;1,500&family=Roboto:wght@500&family=Signika:wght@500&display=swap');
+
+.bg-disks {
+  background-image: url("./assets/discs.jpg");
+}
+
+.DivBox {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.signika {
+  font-family: "Signika", sans-serif;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+.robotoSerif {
+  font-family: "Roboto Serif", serif;
+}
