@@ -1,11 +1,7 @@
-import {
-  TextField,
-  Checkbox,
-  FormControlLabel,
-  Link,
-  Button,
-} from "@mui/material";
+import { Button, Link } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import GoogleIcon from "@mui/icons-material/Google";
+import WindowIcon from "@mui/icons-material/Window";
 
 declare module "@mui/material/styles" {
   interface Theme {
@@ -44,48 +40,21 @@ const theme = createTheme({
 export const LoginForm = ({}) => {
   return (
     <ThemeProvider theme={theme}>
-      <div>
-        <h3 className="text-4xl font-bold roboto">Login</h3>
+      <div className="flex justify-around flex-col gap-4">
+        <div className="mb-6">
+          <h3 className="text-5xl font-bold roboto">Login</h3>
+        </div>
+        <p className="text-lg">Welcome to Or-it a simple tool to organize your life</p>
+        <Button variant="outlined" startIcon={<GoogleIcon />}>
+          Continue with Google
+        </Button>
+        <Button variant="outlined" startIcon={<WindowIcon />}>
+          Continue with Microsoft
+        </Button>
+
+        <p>You don't have an account? <Link href="#">Sign up</Link></p>
+
       </div>
-      <TextField
-        fullWidth
-        id="username"
-        label="User name"
-        placeholder="User name"
-        variant="standard"
-        color="primary"
-        margin="normal"
-      />
-      <TextField
-        fullWidth
-        id="standard-password-input"
-        label="Password"
-        type="password"
-        placeholder="Password"
-        autoComplete="current-password"
-        variant="standard"
-        margin="normal"
-      />
-      <div className="flex justify-between w-full">
-        <p className="roboto text-sm">
-          <Checkbox sx={{ "& .MuiSvgIcon-root": { fontSize: "0.875rem" } }} />
-          {"Remember me"}
-        </p>
-        <Link
-          href="#"
-          underline="always"
-          sx={{
-            fontFamily: "Roboto",
-            fontSize: "0.75rem",
-            margin: "0.4rem",
-          }}
-        >
-          {"I forgot my password"}
-        </Link>
-      </div>
-      <Button sx={{ marginTop: "3rem" }} variant="outlined">
-        Login
-      </Button>
     </ThemeProvider>
   );
 };
