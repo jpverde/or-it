@@ -1,7 +1,7 @@
 import React from "react";
 import { MainLogo } from "@/components/MainLogo";
 import { DivContainer } from "@/components/DivContainer";
-import { ColumnsContainer } from "@/components/ColumnsContainer";
+
 
 export const Home = () => {
   return (
