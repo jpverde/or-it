@@ -1,8 +1,6 @@
-import PersonIcon from '@mui/icons-material/Person';
-import LockPersonIcon from '@mui/icons-material/LockPerson';
-import { LoginForm } from '../LoginForm';
+import { LoginForm } from "../LoginForm";
 
-export const DivContainer = ({ style }) => {
+export const DivContainer = ({ style }: { style: string }) => {
   return (
     <div className={`${style} DivBox`}>
       <LoginForm></LoginForm>

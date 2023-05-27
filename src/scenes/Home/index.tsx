@@ -1,6 +1,5 @@
-import React from "react";
-import { MainLogo } from "@/components/MainLogo";
-import { DivContainer } from "@/components/DivContainer";
+import { MainLogo } from "components/MainLogo";
+import { DivContainer } from "components/DivContainer";
 
 
 export const Home = () => {
