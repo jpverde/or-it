@@ -1,10 +1,11 @@
-import { useState } from "react";
+// import { useState } from "react";
 
 export const Login = () => {
-  const [user, setUser] = useState({
-    email: "",
-    password: "",
-  });
+  // TODO: login component
+  // const [user, setUser] = useState({
+  //   email: "",
+  //   password: "",
+  // });
 
   return (
     <div>

@@ -1,5 +1,4 @@
-import React from "react";
-import { NavBar } from "@/components/Alert/NavBar";
+import { NavBar } from "components/Alert/NavBar";
 
 export const DashBoard = () => {
   return (
@@ -8,7 +7,7 @@ export const DashBoard = () => {
         <NavBar></NavBar>
       </div>
       <div className="DivBox ml-28 mr-8 my-12 w-full overflow-visible">
-        <p>Hola</p>
+        <p>{"Hello"}</p>
       </div>
     </div>
   );

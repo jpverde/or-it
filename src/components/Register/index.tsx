@@ -1,17 +1,17 @@
 import { Button, TextField } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 import { useState } from "react";
-import { useAuth } from "../../context/authContext";
-import { useNavigate } from "react-router-dom";
+// import { useAuth } from "../../context/authContext";
+// import { useNavigate } from "react-router-dom";
 
 export const Register = () => {
   const [user, setUser] = useState({
     email: "",
     password: "",
   });
-  const { signUp } = useAuth();
-  const navigate = useNavigate();
-  const [isError, setIsError] = useState();
+  // const { signUp } = useAuth();
+  // const navigate = useNavigate();
+  // const [isError, setIsError] = useState();
 
   const handleChange = ({
     target: { name, value },
@@ -21,7 +21,7 @@ export const Register = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    signUp(user.email, user.password);
+    // signUp(user.email, user.password);
   };
   return (
     <div>
