@@ -1,7 +1,7 @@
-import { Button, Link } from "@mui/material";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
 import GoogleIcon from "@mui/icons-material/Google";
 import WindowIcon from "@mui/icons-material/Window";
+import { Button, Link } from "@mui/material";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 declare module "@mui/material/styles" {
   interface Theme {
@@ -40,20 +40,24 @@ const theme = createTheme({
 export const LoginForm = ({}) => {
   return (
     <ThemeProvider theme={theme}>
-      <div className="flex justify-around flex-col gap-4">
-        <div className="mb-6">
-          <h3 className="text-5xl font-bold roboto">Login</h3>
+      <div className={"flex justify-around flex-col gap-4"}>
+        <div className={"mb-6"}>
+          <h3 className={"text-5xl font-bold roboto"}>{"Login"}</h3>
         </div>
-        <p className="text-lg">Welcome to Or-it a simple tool to organize your life</p>
-        <Button variant="outlined" startIcon={<GoogleIcon />}>
-          Continue with Google
+        <p className={"text-lg"}>
+          {"Welcome to Or-it a simple tool to organize your life"}
+        </p>
+        <Button startIcon={<GoogleIcon />} variant={"outlined"}>
+          {"Continue with Google"}
         </Button>
-        <Button variant="outlined" startIcon={<WindowIcon />}>
-          Continue with Microsoft
+        <Button startIcon={<WindowIcon />} variant={"outlined"}>
+          {"Continue with Microsoft"}
         </Button>
 
-        <p>You don't have an account? <Link href="#">Sign up</Link></p>
-
+        <p>
+          {"You don't have an account? "}
+          <Link href={"#"}>{"Sign up"}</Link>
+        </p>
       </div>
     </ThemeProvider>
   );

@@ -1,17 +1,19 @@
-// import { useState } from "react";
+// Import { useState } from "react";
 
 export const Login = () => {
-  // TODO: login component
-  // const [user, setUser] = useState({
-  //   email: "",
-  //   password: "",
-  // });
+  /*
+   * TODO: login component
+   * const [user, setUser] = useState({
+   *   email: "",
+   *   password: "",
+   * });
+   */
 
   return (
     <div>
-      <form action="">
-        <input type="email" name="email" id="email" />
-        <input type="password" name="password" id="password" />
+      <form action={""}>
+        <input id={"email"} name={"email"} type={"email"} />
+        <input id={"password"} name={"password"} type={"password"} />
       </form>
     </div>
   );
