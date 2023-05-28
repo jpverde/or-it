@@ -22,7 +22,7 @@ module.exports = {
     "prettier",
     "react",
     "react-hooks",
-    'react-refresh',
+    "react-refresh",
   ],
   extends: [
     "eslint:all",
@@ -35,9 +35,8 @@ module.exports = {
     "plugin:jsx-a11y/strict",
     "plugin:prettier/recommended",
     "plugin:react/all",
-    "plugin:storybook/recommended",
     "prettier",
-    'plugin:react-hooks/recommended',
+    "plugin:react-hooks/recommended",
   ],
   settings: {
     "import/parsers": {
@@ -49,7 +48,10 @@ module.exports = {
   },
   ignorePatterns: [".eslintrc.js"],
   rules: {
-    'react-refresh/only-export-components': 'warn',
+    "react/forbid-component-props": "off",
+    // suppress errors for missing 'import React' in files
+    "react/react-in-jsx-scope": "off",
+    "react-refresh/only-export-components": "warn",
     "capitalized-comments": [
       "error",
       "always",

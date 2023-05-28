@@ -1,17 +1,18 @@
-import { Home } from "./scenes/Home";
-import { Routes, Route } from "react-router-dom";
-import { Login } from "./components/Login";
-import { Register } from "./components/Register";
-import { DashBoard } from "./scenes/DashBoard";
+import { Route, Routes } from "react-router-dom";
+
+import { Login } from "components/Login";
+import { Register } from "components/Register";
+import { DashBoard } from "scenes/DashBoard";
+import { Home } from "scenes/Home";
 
 const App = () => (
-  <div className="bg-disks bg-cover bg-center h-screen text-white">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/dashboard" element={<DashBoard />} />
-      </Routes>
+  <div className={"bg-disks bg-cover bg-center h-screen text-white"}>
+    <Routes>
+      <Route element={<Home />} path={"/"} />
+      <Route element={<Login />} path={"/login"} />
+      <Route element={<Register />} path={"/register"} />
+      <Route element={<DashBoard />} path={"/dashboard"} />
+    </Routes>
   </div>
 );
 

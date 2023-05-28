@@ -1,17 +1,21 @@
-import { Button, TextField } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
+import { Button, TextField } from "@mui/material";
 import { useState } from "react";
-// import { useAuth } from "../../context/authContext";
-// import { useNavigate } from "react-router-dom";
+/*
+ * Import { useAuth } from "../../context/authContext";
+ * import { useNavigate } from "react-router-dom";
+ */
 
 export const Register = () => {
   const [user, setUser] = useState({
     email: "",
     password: "",
   });
-  // const { signUp } = useAuth();
-  // const navigate = useNavigate();
-  // const [isError, setIsError] = useState();
+  /*
+   * Const { signUp } = useAuth();
+   * const navigate = useNavigate();
+   * const [isError, setIsError] = useState();
+   */
 
   const handleChange = ({
     target: { name, value },
@@ -21,33 +25,34 @@ export const Register = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // signUp(user.email, user.password);
+    // SignUp(user.email, user.password);
   };
+
   return (
     <div>
       <form onSubmit={handleSubmit}>
         <TextField
           id={"register-email"}
+          label={"Email"}
           name={"email"}
+          onChange={handleChange}
           type={"email"}
           variant={"outlined"}
-          label={"Email"}
-          onChange={handleChange}
-        ></TextField>
+        />
         <TextField
           id={"register-password"}
+          label={"Password"}
           name={"password"}
+          onChange={handleChange}
           type={"password"}
           variant={"outlined"}
-          label={"Password"}
-          onChange={handleChange}
-        ></TextField>
+        />
 
         <Button
-          variant={"outlined"}
-          size={"large"}
           endIcon={<SendIcon />}
+          size={"large"}
           type={"submit"}
+          variant={"outlined"}
         >
           {"Register"}
         </Button>
