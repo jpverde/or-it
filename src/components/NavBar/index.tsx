@@ -8,7 +8,7 @@ import ListIcon from "@mui/icons-material/List";
 import LogoutIcon from "@mui/icons-material/Logout";
 import { IconButton, Tooltip } from "@mui/material";
 
-export const NavBar = () => {
+export const NavBar = (): JSX.Element => {
   return (
     <div>
       <nav

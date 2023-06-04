@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 import GoogleIcon from "@mui/icons-material/Google";
 import WindowIcon from "@mui/icons-material/Window";
 import { Button, Link } from "@mui/material";
@@ -26,27 +27,21 @@ declare module "@mui/material/styles" {
 }
 
 const theme = createTheme({
+  palette: {
+    primary: {
+      darker: "#e2e8f0",
+      main: "#020617",
+    },
+  },
   status: {
     danger: "#e53e3e",
   },
-  palette: {
-    primary: {
-      main: "#e2e8f0",
-      darker: "#e2e8f0",
-    },
-  },
 });
 
-export const LoginForm = ({}) => {
+export const LoginForm = (): JSX.Element => {
   return (
     <ThemeProvider theme={theme}>
-      <div className={"flex justify-around flex-col gap-4"}>
-        <div className={"mb-6"}>
-          <h3 className={"text-5xl font-bold roboto"}>{"Login"}</h3>
-        </div>
-        <p className={"text-lg"}>
-          {"Welcome to Or-it a simple tool to organize your life"}
-        </p>
+      <div className={"flex justify-around flex-col gap-4 w-96 m-auto"}>
         <Button startIcon={<GoogleIcon />} variant={"outlined"}>
           {"Continue with Google"}
         </Button>
@@ -54,9 +49,11 @@ export const LoginForm = ({}) => {
           {"Continue with Microsoft"}
         </Button>
 
-        <p>
-          {"You don't have an account? "}
-          <Link href={"#"}>{"Sign up"}</Link>
+        <p className={"mt-24 text-slate-700"}>
+          {"Signing up for Or-it account means you agree to the "}
+          <Link href={"#"}>
+            {"Privacy Policy, Terms of Service and Affiliate Terms"}
+          </Link>
         </p>
       </div>
     </ThemeProvider>

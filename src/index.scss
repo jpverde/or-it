@@ -3,12 +3,12 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,100;1,500&family=Roboto:wght@500&family=Signika:wght@500&display=swap");
 
-.bg-disks {
-  background-image: url("./assets/discs.jpg");
+.bg-background {
+  background-image: url("./assets/nahil.jpg");
 }
 
-.bg-background {
-  background-image: url("./assets/sky.jpg");
+.bg-discs {
+  background-image: url("./assets/discs.jpg");
 }
 
 .DivBox {
@@ -37,4 +37,10 @@
   &::-webkit-scrollbar {
     display: none;
   }
+}
+
+// height
+
+.height-95 {
+  height: 95%;
 }

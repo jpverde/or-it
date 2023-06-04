@@ -48,6 +48,7 @@ module.exports = {
   },
   ignorePatterns: [".eslintrc.js"],
   rules: {
+    "react/require-default-props": "off",
     "react/forbid-component-props": "off",
     // suppress errors for missing 'import React' in files
     "react/react-in-jsx-scope": "off",
@@ -244,7 +245,6 @@ module.exports = {
     "import/newline-after-import": "error",
     "import/no-absolute-path": ["error", { commonjs: false }],
     "import/no-cycle": ["error", { ignoreExternal: true }],
-    "import/no-default-export": "error",
     "import/no-deprecated": "error",
     /*
      * This rule conflicts with the rule eslint/consistent-type-imports when

@@ -6,7 +6,7 @@ import { useState } from "react";
  * import { useNavigate } from "react-router-dom";
  */
 
-export const Register = () => {
+export const Register = (): JSX.Element => {
   const [user, setUser] = useState({
     email: "",
     password: "",
@@ -17,16 +17,16 @@ export const Register = () => {
    * const [isError, setIsError] = useState();
    */
 
-  const handleChange = ({
+  function handleChange({
     target: { name, value },
-  }: React.ChangeEvent<{ name: string; value: string }>): void => {
+  }: React.ChangeEvent<{ name: string; value: string }>): void {
     setUser({ ...user, [name]: value });
-  };
+  }
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+  function handleSubmit(event: React.FormEvent): void {
+    event.preventDefault();
     // SignUp(user.email, user.password);
-  };
+  }
 
   return (
     <div>
