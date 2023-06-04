@@ -1,9 +1,11 @@
-import { LoginForm } from "../LoginForm";
+import type { ReactNode } from "react";
 
-export const DivContainer = ({ style }: { style: string }) => {
-  return (
-    <div className={`${style} DivBox`}>
-      <LoginForm />
-    </div>
-  );
+export const DivContainer = ({
+  styles = "",
+  children,
+}: {
+  styles?: string;
+  children: ReactNode;
+}): JSX.Element => {
+  return <div className={`${styles} DivBox`}>{children}</div>;
 };

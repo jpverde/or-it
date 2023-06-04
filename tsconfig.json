@@ -29,6 +29,6 @@
     "skipLibCheck": true,
     "target": "ESNext",
   },
-  "include": ["./src"],
+  "include": ["./src", "vite.config.ts", "./assets"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

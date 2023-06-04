@@ -1,3 +1,9 @@
 {
-  "bracketSameLine": false
+  "bracketSameLine": false,
+  "prettier/prettier": [
+    "error",
+    {
+      "endOfLine": "auto"
+    }
+  ]
 }

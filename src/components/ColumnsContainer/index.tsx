@@ -7,6 +7,6 @@ interface IColumnsContainer {
 export const ColumnsContainer = ({
   columnsNumber,
   children,
-}: IColumnsContainer) => {
+}: IColumnsContainer): JSX.Element => {
   return <div className={`grid grid-cols-${columnsNumber}`}>{children}</div>;
 };
