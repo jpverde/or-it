@@ -3,32 +3,24 @@
     "allowJs": false,
     "baseUrl": "src",
     "esModuleInterop": true,
-    "module": "ESNext",
     "forceConsistentCasingInFileNames": true,
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
-
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "allowSyntheticDefaultImports": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
-
-    /* Linting */
-    "strict": true,
+    "jsx": "react",
+    "lib": ["dom", "es2019"],
+    "moduleResolution": "node",
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
 
     "paths": {
       "components/*": [ "components/*" ],
       "scenes/*": [ "scenes/*" ],
+      "utils/*": ["utils/*"],
     },
+    "noEmit": true,
+    "resolveJsonModule": true,
     "skipLibCheck": true,
-    "target": "ESNext",
+    "strict": true,
+    "target": "es2019"
   },
-  "include": ["./src", "vite.config.ts", "./assets"],
-  "references": [{ "path": "./tsconfig.node.json" }]
 }
