@@ -23,6 +23,8 @@ import type { FragmentDefinitionNode, OperationDefinitionNode } from "graphql";
 import _ from "lodash";
 import { createElement, useMemo } from "react";
 
+import { getEnvironment } from "utils/environment";
+
 const getCookie: (name: string) => string = (name: string): string => {
   if (document.cookie !== "") {
     const cookies: string[] = document.cookie.split(";");
@@ -150,7 +152,7 @@ const ApolloProvider: React.FC<ProviderProps> = (
     (): ApolloClient<NormalizedCacheObject> =>
       new ApolloClient({
         cache: new InMemoryCache(),
-        connectToDevTools: true,
+        connectToDevTools: getEnvironment() !== "production",
         defaultOptions: {
           watchQuery: {
             fetchPolicy: "cache-and-network",
