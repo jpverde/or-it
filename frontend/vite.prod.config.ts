@@ -1,6 +1,6 @@
 import type { UserConfigExport } from "vite";
 
-import { CI_COMMIT_REF_NAME, BUCKET_NAME } from "./src/utils/ctx";
+import { BUCKET_NAME, CI_COMMIT_REF_NAME } from "./src/utils/ctx";
 import { commonConfig } from "./vite.common.config";
 
 const prodConfig: UserConfigExport = {

@@ -1,0 +1,17 @@
+{
+  "recommendations": [
+    "GrapeCity.gc-excelviewer",
+    "GraphQL.vscode-graphql",
+    "shardulm94.trailing-spaces",
+    "streetsidesoftware.code-spell-checker",
+    "tamasfe.even-better-toml",
+    "usernamehw.errorlens",
+    "yoavbls.pretty-ts-errors",
+    "znck.grammarly",
+    "rust-lang.rust-analyzer",
+    "serayuzgur.crates",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "eamodio.gitlens"
+  ]
+}
