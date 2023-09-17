@@ -1,11 +1,11 @@
 import type { UserConfigExport } from "vite";
 
-import { CI_COMMIT_REF_NAME, INTEGRATES_BUCKET_NAME } from "./src/utils/ctx";
+import { CI_COMMIT_REF_NAME, BUCKET_NAME } from "./src/utils/ctx";
 import { commonConfig } from "./vite.common.config";
 
 const prodConfig: UserConfigExport = {
   ...commonConfig,
-  base: `https://${INTEGRATES_BUCKET_NAME}/${CI_COMMIT_REF_NAME}/static/dashboard/`,
+  base: `https://${BUCKET_NAME}/${CI_COMMIT_REF_NAME}/static/dashboard/`,
   mode: "production",
 };
 
